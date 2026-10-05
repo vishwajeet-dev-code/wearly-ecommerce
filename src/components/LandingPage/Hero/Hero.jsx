@@ -1,8 +1,8 @@
-import HeroCarousel from './Carousel/HeroCarousel';
+import HeroCarousel from '../Carousel/HeroCarousel';
 
 const Hero = () => {
   return (
-    <main className="aspect-[36/17] w-full px-3">
+    <main className="aspect-[36/17] w-full">
       <HeroCarousel />
     </main>
   )

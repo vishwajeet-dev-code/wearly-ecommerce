@@ -1,14 +1,12 @@
-import Navbar from './components/Navbar/Navbar'
-import Hero from './components/LandingPage/Hero/Hero'
-import ShopByCategory from './components/LandingPage/ShopByCategory/ShopByCategory'
+
+import LandingPage from './components/LandingPage/LandingPage'
 
 function App() {
 
   return (
     <>
-      <Navbar />
-      <Hero />
-      <ShopByCategory />
+      <LandingPage />
+      
     </>
   )
 }
