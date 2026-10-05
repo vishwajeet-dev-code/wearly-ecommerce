@@ -1,8 +1,8 @@
-import slideOne from '../../../assets/carousel-images/slide-1.jpeg'
-import slideTwo from '../../../assets/carousel-images/slide-2.jpeg'
-import slideThree from '../../../assets/carousel-images/slide-3.jpeg'
-import slideFour from '../../../assets/carousel-images/slide-4.png'
-import slideFifth from '../../../assets/carousel-images/slide-5.png'
+import slideOne from '../../../../assets/carousel-images/slide-1.jpeg'
+import slideTwo from '../../../../assets/carousel-images/slide-2.jpeg'
+import slideThree from '../../../../assets/carousel-images/slide-3.jpeg'
+import slideFour from '../../../../assets/carousel-images/slide-4.png'
+import slideFifth from '../../../../assets/carousel-images/slide-5.png'
 
 import { Autoplay } from 'swiper/modules'
 import { ChevronLeft, ChevronRight } from 'lucide-react'

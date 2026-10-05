@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+:root {
+  font-family: "Assistant", sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: "Assistant", sans-serif;
+}
