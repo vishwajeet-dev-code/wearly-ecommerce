@@ -8,10 +8,10 @@ import {
   X,
 } from "lucide-react";
 
+import { Link } from "react-router-dom";
+
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isSearchOpen, setIsSearchOpen] = useState(false);
-
   return (
     <header className="sticky top-0 z-50 border-b border-[rgba(0,0,0,0.1)] bg-white">
       <div className="mx-auto grid h-22 max-w-full grid-cols-[1fr_auto_1fr] items-center sm:px-12">
@@ -34,16 +34,12 @@ function Navbar() {
         </a>
 
         <div className="flex items-center justify-self-end text-gray-800 sm:gap-6">
-          <button
-            type="button"
-            onClick={() => setIsSearchOpen(!isSearchOpen)}
+          <Link
+          to="/search"
             className="cursor-pointer"
-            aria-label={isSearchOpen ? "Close search" : "Open search"}
-            aria-expanded={isSearchOpen}
-            aria-controls="navbar-search"
           >
             <Search strokeWidth={1.1} size={28} />
-          </button>
+          </Link>
 
           <a
             href="/cart"
@@ -62,30 +58,15 @@ function Navbar() {
             <Heart strokeWidth={1.1} size={28} />
           </a>
 
-          <a
-            href="/profile"
+          <Link
+            to="/login"
             className="cursor-pointer"
             aria-label="Profile"
           >
             <UserRound strokeWidth={1.1} size={28} />
-          </a>
+          </Link>
         </div>
       </div>
-
-      {isSearchOpen && (
-        <div id="navbar-search" className="border-t border-gray-200 bg-white px-5 py-4">
-          <div className="mx-auto flex h-11 max-w-2xl items-center gap-3 rounded-md bg-gray-100 px-4">
-            <Search size={19} className="shrink-0 text-gray-500" />
-            <input
-              type="text"
-              placeholder="Search products..."
-              aria-label="Search products"
-              autoFocus
-              className="w-full bg-transparent text-sm outline-none"
-            />
-          </div>
-        </div>
-      )}
 
       {isMenuOpen && (
         <nav
